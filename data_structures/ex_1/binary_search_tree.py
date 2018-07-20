@@ -13,7 +13,7 @@ class BinarySearchTree:
     return
 
   def breadth_first_for_each(self, cb):
-    array = [self.right, self.left]
+    array = [self.left, self.right]
     cb(self.value)
 
     while len(array) > 0:
